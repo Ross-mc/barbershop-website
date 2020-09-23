@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gerard Street Barbers</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel ="stylesheet" href="style.css">
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<header>
+    <nav class="navbar justify-content-end" id="fullNav">
+        <a class="navbar-brand" id="navLogo" href="#top">
+            <img src="images/barber-shop-logo.jpg" alt="Logo" style="width:40px;">
+        </a>
+        <ul class="nav">
+            <li class="nav-item"><a href="#top" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#priceList" class="nav-link">Pricing</a></li>
+            <li class="nav-item"><a href="#opening-times" class="nav-link">Opening Hours</a></li>
+            <li class="nav-item"><a href="#find-us" class="nav-link">Find Us</a></li>
+            <li class="nav-item"><a href="#booking-header" class="nav-link">Bookings</a></li>
+        </ul>
+    </nav>
+    <nav class="navbar justify-content-center" id="vertNav">
+        <a class="navbar-brand" id="navLogo" href="#top">
+        <img src="images/barber-shop-logo.jpg" alt="Logo" style="width:40px;">
+        Gerard Street Barbers
+        </a>
+    </nav>
+ 
+
+</header>
+<body>
+    <a name="top"></a>
+    <div class="container">
+            <h2 id="gallery-header">Gerard Street Barbers</h2>
+            <h3 id="gallery-subheader">44 Gerard Street, Ashton-in-Makerfield, WN4 9AG</h3>
+            <h4 id="phone">01632 960055</h4>
+        <img class="img-fluid img-responsive" id="gallery-img" src="images/barbershop0.jpg" alt="Barbershop Gallery">
+    </div>
+    <!--NEED TO ADD PRICE LIST HERE-->
+    <div class ="belowGal" id="priceList">
+        <h3 id="priceHeader">Pricing</h3>
+        <table id="priceTable">
+            <tr>
+                <td>Children</td>
+                <td>£5</td>
+            </tr>
+            <tr>
+                <td>Seniors</td>
+                <td>£5</td>
+            </tr>
+            <tr>
+                <td>Cut & Trim</td>
+                <td>£10</td>
+            </tr>
+            <tr>
+                <td>Beard Trim</td>
+                <td>£3</td>
+            </tr>
+            <tr>
+                <td>Full Shave</td>
+                <td>£3</td>
+            </tr>
+        </table>
+    </div>
+    <div class="belowGal openingTimes" id="opening-times">
+        <h3 id="openingHeader">Opening Times</h3>
+        <table class="opening">
+            <tr>
+                <td>Monday</td>
+                <td>Closed</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>09:00 - 18:00</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>09:00 - 18:00</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>10:00 - 19:00</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>09:00 - 18:00</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>09:00 - 13:00</td>
+            </tr>
+            <tr>
+                <td>Sunday</td>
+                <td>Closed</td>
+            </tr>
+        </table>
+    </div>
+    <div class="map" id="find-us">
+        <h3>Find us</h3>
+        <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+            <iframe class="embed-responsive-item" id="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499.06776736117126!2d-2.6369376695200897!3d53.48669847151919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487b04ff2f761fa9%3A0x8d53e19f2ddf21ac!2s44%20Gerard%20St%2C%20Ashton-in-Makerfield%2C%20Wigan%20WN4%209AE!5e0!3m2!1sen!2suk!4v1598962043348!5m2!1sen!2suk" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </div>
+    <div class="belowGal bookings">
+        <h3 id="booking-header">Bookings</h3>
+        <form id="booking-form">
+            <input class="form-control" type="date" id="date" required><label for="date"></label>
+            <input class="form-control"  type="time" id="time" min ="09:00" max ="18:30" step="00:30" required><label for="time"></label>
+            <input class="form-control" id="name" type="name" placeholder="Please Enter Your Name" required><label for="name"></label>
+            <input class="form-control" type="tel" id="telephone" required placeholder="Phone Number"><label for="telephone" ></label>
+            <input class="form-control" id="email" type="email" placeholder="Please Enter a Valid Email Address" required><label for="email"><small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small></label>
+            <button class="form-control btn btn-success" id="submit">Place Booking</button>
+            <p id="booking-form-p">Please submit a booking request and we will confirm via email or text.</p>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; Ross McIntyre 2020 - return to <a href="https://www.rossmcintyre.tech">rossmcintyre.tech</a></p>
+    </footer>
+</body>
+</html>

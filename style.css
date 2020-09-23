@@ -1,0 +1,256 @@
+html {
+    font-size: 18px;
+    color: white;
+
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+    position: relative;
+
+
+}
+
+.navbar{
+    position: fixed;
+    z-index: 100;
+    background-color: black;
+    width: 100%;
+    top: 0;
+}
+
+#vertNav{
+    font-size: 12px;
+    display: none;
+}
+
+@media screen and (orientation:portrait){
+
+    #fullNav, #gallery-header{
+        display: none;
+    }
+    #vertNav{
+        display: inline;
+        text-align: center;
+    }
+}
+
+
+a{
+    color: white;
+}
+
+#nav-logo{
+    position: fixed;
+    right: 90%;
+}
+
+.container{
+    min-width: 100%;
+    padding: 0px;
+    position: relative;
+}
+
+#gallery-img{
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 60px;
+    object-fit: cover;
+    height: 800px;
+    width: 100%;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+#gallery-header{
+    z-index: 99;
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 10px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    top: 60px;
+    width: 85%;
+}
+#gallery-subheader{
+    z-index: 99;
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 120px;
+    font-size: 16px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    width: 85%;
+}
+
+#phone{
+    z-index: 99;
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 140px;
+    font-size: 16px;
+    width: 85%;
+}
+
+@media screen and (orientation:portrait){
+    #gallery-subheader{
+        top: 85px;
+    }
+    #phone{
+        top: 125px;
+    }
+    .form-control{
+        font-size: 10px;
+    }
+}
+
+.belowGal{
+    max-width: 80%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#priceList{
+    position: absolute;
+    top: 910px;
+    left: 50%;
+    transform:translate(-50%);
+    color: white;
+    width: 85%
+}
+
+#priceHeader{
+    text-align: center;
+
+}
+
+#priceTable{
+    position: relative;
+    left: 50%;
+    transform:translate(-50%);
+}
+
+.openingTimes{
+    position: absolute;
+    top: 1110px;
+    left: 50%;
+    transform:translate(-50%);
+    color: white;
+    width: 100%;
+}
+
+#openingHeader{
+    text-align: center;
+
+}
+
+.opening{
+    position: relative;
+    left: 50%;
+    transform:translate(-50%);
+    max-width: 100%;
+}
+
+td{
+    padding-right: 10px
+}
+
+.map{
+    position: absolute;
+    top: 1410px;
+    left: 50%;
+    transform:translate(-50%);
+    text-align: center;
+    color: white;
+
+}
+
+#google-map{
+    width: 600px;
+    height: 450px;
+}
+
+.bookings{
+    margin-top: 20px;
+    position: absolute;
+    top: 1910px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+@media(max-width: 750px){
+    #google-map{
+        width: 380px;
+        height: 285px;
+        text-align: center;
+    }
+    .bookings{
+        top: 1750px;
+    }
+}
+
+@media(max-width: 420px){
+    #google-map{
+        width: 300px;
+        height: 225px;
+        text-align: center;
+    }
+}
+
+
+
+#booking-header, #booking-form-p{
+    color:white;
+    text-align: center;
+}
+
+
+
+footer{
+    position: fixed;
+    bottom: 0%;
+    color: gray;
+}
+
+footer a{
+    color: gray;
+
+}
+@media(max-width: 1400px){
+    footer{
+        position: absolute;
+        top: 2500px;
+        height: 100px;
+        left: 50%;
+        transform: translate(-50%);
+        text-align: center;
+    }  
+}
+
+@media screen and (orientation:portrait){
+    footer{
+        position: absolute;
+        top: 2500px;
+        height: 100px;
+        left: 50%;
+        transform: translate(-50%);
+        text-align: center;
+    }
+}
+
+@media(max-width: 750px){
+    footer{
+        top: 2350px;
+    }
+}
+
+
