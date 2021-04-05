@@ -4,4 +4,4 @@ This is a barbershop website I built after I had completed the Udemy course "The
 
 The barbershop itself is fake, and the address listed on the website is a KFC restaurant. The phone number is a standard UK fake phone number.
 
-The website is live [here](https://rossmcintyre.tech/barbershop-website/barbershop.html).
+The website is live [here](https://ross-mc.github.io/barbershop-website/).
